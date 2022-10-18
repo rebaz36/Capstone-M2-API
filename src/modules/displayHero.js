@@ -4,7 +4,6 @@ const displayHero = (number, section) => {
     .then((data) => {
       const imageContainer = document.querySelector('.hero-image');
       imageContainer.innerHTML += `<img src="${data[number][section]}" />`;
-      console.log(data);
     });
 };
 
