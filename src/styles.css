@@ -32,6 +32,7 @@ nav {
 a {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -63,4 +64,20 @@ a:hover {
 .hero img {
   height: 400px;
   width: auto;
+}
+
+/* MAIN */
+main {
+  height: 200px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--liBlue);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--liPink);
+  font-weight: 700;
 }
