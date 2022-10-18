@@ -52,7 +52,7 @@ a:hover {
 
 .hero .left-side {
   width: 370px;
-  color: #fb3569;
+  color: var(--liPink);
 }
 
 .hero p {
@@ -67,8 +67,28 @@ a:hover {
 }
 
 /* MAIN */
-main {
-  height: 200px;
+.list-container {
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--liOrange);
+  padding: 30px 10px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.movie-image {
+  height: 400px;
+  width: 275px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
