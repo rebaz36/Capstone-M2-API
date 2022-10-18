@@ -1,3 +1,33 @@
-h1 {
-  color: red;
+:root {
+  --font: "'Fuzzy Bubbles', cursive";
+  --liBlue: #51eaea;
+  --liYellow: #fffde1;
+  --liOrange: #ff9d76;
+  --liPink: #fb3569;
+}
+
+h3 {
+  font-family: var(--font);
+  color: var(--liPink);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--liBlue);
+}
+
+nav {
+  display: flex;
+  column-gap: 35px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline wavy var(--liPink);
 }
