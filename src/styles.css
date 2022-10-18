@@ -6,12 +6,15 @@
   --liPink: #fb3569;
 }
 
+/* GLOBALS */
 * {
   font-family: var(--font);
 }
 
+/* NAVIGATION BAR */
 h3 {
   color: var(--liPink);
+  font-size: 25px;
 }
 
 .navigation {
@@ -33,4 +36,31 @@ a {
 
 a:hover {
   text-decoration: underline wavy var(--liPink);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: var(--liYellow);
+  padding: 100px 0;
+}
+
+.hero .left-side {
+  width: 370px;
+  color: #fb3569;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+.hero img {
+  height: 400px;
+  width: auto;
 }
