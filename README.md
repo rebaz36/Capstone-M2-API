@@ -26,12 +26,13 @@ In this capstone project we're going to display information about the Studio Ghi
 - JavaScript
 - Webpack
 - HTML and CSS
+- Jest for testing
 - [The Studio Ghibli API](https://ghibliapi.herokuapp.com/)
 - [The involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) from Microverse.
 
 ## Live Demo
 
-Not yet available [we are working on it](https://giphy.com/gifs/reactionseditor-cat-typing-ule4vhcY1xEKQ)
+Live Demo is Up and Running [Live Demo](https://rebaz36.github.io/Capstone-M2-API/)
 
 
 ## Getting Started
