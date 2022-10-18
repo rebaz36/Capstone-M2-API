@@ -27,7 +27,7 @@ In this capstone project we're going to display information about the Studio Ghi
 - Webpack
 - HTML and CSS
 - [The Studio Ghibli API](https://ghibliapi.herokuapp.com/)
-- [The involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) from @microverseinc
+- [The involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) from Microverse.
 
 ## Live Demo
 
