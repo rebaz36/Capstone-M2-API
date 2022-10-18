@@ -1,13 +1,16 @@
 :root {
-  --font: "'Fuzzy Bubbles', cursive";
+  --font: 'Roboto Condensed', sans-serif;
   --liBlue: #51eaea;
   --liYellow: #fffde1;
   --liOrange: #ff9d76;
   --liPink: #fb3569;
 }
 
-h3 {
+* {
   font-family: var(--font);
+}
+
+h3 {
   color: var(--liPink);
 }
 
