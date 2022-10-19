@@ -3,7 +3,7 @@ export const displayHero = (number, section) => {
     .then((response) => response.json())
     .then((data) => {
       const imageContainer = document.querySelector('.hero-image');
-      imageContainer.innerHTML += `<img src="${data[number][section]}" />`;
+      imageContainer.innerHTML += `<img src="${data[number][section]}"/>`;
     });
 };
 
@@ -16,7 +16,7 @@ export const Displaymovies = (number) => {
         const minutes = (data[i].running_time % 60);
         const listContainer = document.querySelector('.list-container');
         listContainer.innerHTML += `<div class="movie-container">
-          <img class="movie-image" src="${data[i].image}" alt="${data[i].title}">
+          <img class="movie-image" src="${data[i].image}" alt="${data[i].title}" data-index-number=${i}>
             <div class="movie-info">
               <h3>${data[i].title}</h3>
               <p>${data[i].release_date}</p>
