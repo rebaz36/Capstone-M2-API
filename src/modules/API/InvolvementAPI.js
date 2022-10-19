@@ -45,8 +45,8 @@ export default class InvolvementAPI {
   }
 
   // returns list of objects that includes the movies and their comments
-  async getComments() {
-    const response = await fetch(`${this.url}${this.appId}/comments`, { method: 'GET' });
+  async getComments(id) {
+    const response = await fetch(`${this.url}${this.appId}/comments?item_id=${id}`, { method: 'GET' });
     const data = await response.json();
     return data;
   }
