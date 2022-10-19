@@ -7,7 +7,7 @@ export const displayHero = (number, section) => {
     });
 };
 
-export const Displaymovies = (number) => {
+export const displayMovies = (number) => {
   fetch('https://ghibliapi.herokuapp.com/films')
     .then((response) => response.json())
     .then((data) => {
