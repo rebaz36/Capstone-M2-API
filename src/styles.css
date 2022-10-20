@@ -260,10 +260,19 @@ footer {
 input,
 textarea {
   border: 2px solid var(--liPink);
-  width: calc(max(20vw, 100px));
+  width: calc(max(20vw, 300px));
   border-radius: 5px;
   background-color: var(--liYellow);
   color: var(--liPink);
+  font-size: 14px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
 }
 
 input:focus,
@@ -285,5 +294,10 @@ textarea:focus {
 
   .information {
     flex-direction: column;
+  }
+
+  input,
+  textarea {
+    width: 70vw;
   }
 }
