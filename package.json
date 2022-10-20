@@ -44,7 +44,12 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "verbose": true
+  },
   "dependencies": {
+    "jsdom": "^20.0.1",
     "lodash": "^4.17.21"
   }
 }

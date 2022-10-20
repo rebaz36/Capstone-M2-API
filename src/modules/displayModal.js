@@ -43,9 +43,10 @@ export async function displayModal(number) {
   const userInput = document.querySelector('.user-input');
   const messageInput = document.querySelector('.message-input');
   const form = document.querySelector('form');
-  form.addEventListener('submit', () => {
-    involvement.postComments(messageInput.value, userInput.value, `item${number}`);
-    renderComments(number);
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    await involvement.postComments(messageInput.value, userInput.value, `item${number}`);
+    await renderComments(number);
     messageInput.value = '';
     userInput.value = '';
   });
@@ -56,7 +57,7 @@ export async function displayModal(number) {
       hideModal();
     }
   });
-  renderComments(number);
+  await renderComments(number);
 }
 
 export default displayModal;
