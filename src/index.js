@@ -10,7 +10,7 @@ document.onload = displayMovies(20);
 
 moviesContainer.addEventListener('click', (e) => {
   const { target } = e;
-  if (target.matches('.movie-image')) {
+  if (target.matches('.movie-image') || target.matches('.comment-button')) {
     displayModal(target.getAttribute('data-index-number'));
   }
 });

@@ -17,7 +17,7 @@ export default async function displayMovies(number) {
         </div>
         <div class="movie-buttons">
           <button class="like-button">Like</button>
-          <button class="comment-button">Comment</button>
+          <button class="comment-button" data-index-number="${i}">Comment</button>
         </div>
       </div>`;
   }
