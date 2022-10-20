@@ -3,10 +3,6 @@ export default class CommentsCounter {
     this.comments = 0;
   }
 
-  addComments() {
-    return this.comments + 1;
-  }
-
   getComments() {
     this.comments = 0;
     document.querySelectorAll('.comment').forEach(() => {
