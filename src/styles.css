@@ -11,6 +11,10 @@
   font-family: var(--font);
 }
 
+p {
+  margin: 0;
+}
+
 /* NAVIGATION BAR */
 h3 {
   color: var(--liPink);
@@ -69,26 +73,77 @@ a:hover {
 /* MAIN */
 .list-container {
   display: flex;
-  gap: 30px;
-  padding: 50px;
+  gap: 40px;
+  padding: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .movie-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: var(--liOrange);
-  padding: 30px 10px;
+  padding: 20px 20px;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 15px 10px 20px 1px rgba(0, 0, 0, 0.4);
 }
 
 .movie-image {
-  height: 400px;
-  width: 275px;
+  height: 300px;
+  width: 230px;
+  border-radius: 20px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title {
+  align-self: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--liPink);
+  flex-wrap: wrap;
+}
+
+.movie-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.like-button {
+  background-color: var(--liPink);
+  border: none;
   border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 10px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.like-button:hover {
+  background-color: var(--liBlue);
+}
+
+.comment-button {
+  background-color: var(--liBlue);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 10px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.comment-button:hover {
+  background-color: var(--liPink);
 }
 
 /* FOOTER */
