@@ -1,7 +1,7 @@
 export default class InvolvementAPI {
   constructor() {
     this.url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
-    this.appId = 'fqzVdzHlyFNWpuh7iQ2I';
+    this.appId = '9nlEs743ggovOR9F67Kt';
     this.headers = { 'Content-type': 'application/json; charset=UTF-8' };
   }
 
@@ -16,14 +16,24 @@ export default class InvolvementAPI {
 
   // add likes, pass the movie number and that movie will get a +1 like
   async addLikes(id) {
-    const body = JSON.stringify({ item_id: `${id}` });
-    await fetch(`${this.url}${this.appId}/likes`, { method: 'POST', body, 'Content-type': 'application/json; charset=UTF-8' });
+    const response = await fetch(`${this.url}${this.appId}/likes`, {
+      method: 'POST',
+      body: JSON.stringify({
+        item_id: id.toString(),
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+    return response;
   }
 
   // retuns a list of objects each object includes movie number and it's number of likes should be
   // filtered based on the movie number
   async getLikes() {
-    const result = await fetch(`${this.url}${this.appId}/likes`, { method: 'GET' });
+    const result = await fetch(`${this.url}${this.appId}/likes`, {
+      method: 'GET',
+    });
     const list = await result.json();
     return list;
   }
