@@ -1,4 +1,4 @@
-export default class ghibliapi {
+export default class Ghibliapi {
   // return all movies
   static async fetchallmovies() {
     const response = await fetch('https://ghibliapi.herokuapp.com/films');
