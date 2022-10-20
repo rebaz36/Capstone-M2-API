@@ -19,7 +19,7 @@ export default class InvolvementAPI {
     const response = await fetch(`${this.url}${this.appId}/likes`, {
       method: 'POST',
       body: JSON.stringify({
-        item_id: id.toString(),
+        item_id: id,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
