@@ -1,5 +1,7 @@
 import ghibilapi from './API/ghibliApi.js';
+import { involvement } from './ClassCall/classCall.js';
 import { modalBg, modalContainer, body } from './elements/elements.js';
+import renderComments from './renderComments.js';
 /* displayModal.js */
 
 export const hideModal = () => {
@@ -24,11 +26,29 @@ export async function displayModal(number) {
     <div class="right">
     <p class="indicator">Release date: <span>${data.release_date}</span></p>
     <p class="indicator">Director: <span>${data.director}</span></p>
-    
     </div>
-  </div>
-  <p class="description indicator">Description: <span>${data.description}</span></p>
-  `;
+    </div>
+    <p class="description indicator">Description: <span>${data.description}</span></p>
+    <br>
+    <div class="comments">
+    <h4 id"comments-header"></h4> 
+    </div>
+    <form class="form-container">
+    <input class="user-input" type="text" data-index-number="${number}" placeholder="Your name" required>
+    <textarea class="message-input" data-index-number="${number}" placeholder="Your comment" required></textarea>
+    <button class="like-button">Add comment</button>
+    </form>
+    `;
+
+  const userInput = document.querySelector('.user-input');
+  const messageInput = document.querySelector('.message-input');
+  const form = document.querySelector('form');
+  form.addEventListener('submit', () => {
+    involvement.postComments(messageInput.value, userInput.value, `item${number}`);
+    renderComments(number);
+    messageInput.value = '';
+    userInput.value = '';
+  });
 
   modalBg.addEventListener('click', (e) => {
     const { target } = e;
@@ -36,6 +56,7 @@ export async function displayModal(number) {
       hideModal();
     }
   });
+  renderComments(number);
 }
 
 export default displayModal;
