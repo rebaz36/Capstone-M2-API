@@ -1,7 +1,6 @@
 import { listContainer } from './elements/elements.js';
 import ghibliapi from './API/ghibliApi.js';
 import { counter } from './ClassCall/classCall.js';
-import { activeButtons, renderLikes } from './renderLikes.js';
 
 export default async function displayMovies(number) {
   listContainer.innerHTML = '';
@@ -19,13 +18,10 @@ export default async function displayMovies(number) {
           <p>Duration: ${hour}h ${minutes} min</p>
         </div>
         <div class="movie-buttons">
-          <button class="like-button">Likes</button>
+          <button class="like-button" data-index-number="${i}">Like This?</button>
           <button class="comment-button" data-index-number="${i}">Comment</button>
         </div>
       </div>`;
   }
-  activeButtons();
-  renderLikes();
-
   counter.getItems();
 }
