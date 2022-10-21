@@ -34,6 +34,9 @@ In this capstone project we're going to display information about the Studio Ghi
 
 Live Demo is Up and Running [Live Demo](https://rebaz36.github.io/Capstone-M2-API/)
 
+## Documentation Video
+
+[Documentation Video](https://youtu.be/fKHEtu-bkOU)
 
 ## Getting Started
 
