@@ -11,7 +11,10 @@ export default class ItemCounter {
     document.querySelectorAll('.movie-container').forEach(() => {
       this.items = this.addItems();
     });
-    document.querySelector('#moviecount').innerHTML = `Movies (${this.items})`;
     return this.items;
+  }
+
+  setItems() {
+    document.querySelector('#moviecount').innerHTML = `Movies (${this.items})`;
   }
 }

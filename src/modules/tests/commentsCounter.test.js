@@ -1,4 +1,4 @@
-import { commentCounter } from '../ClassCall/classCall';
+import { commentCounter } from '../ClassCall/classCall.js';
 
 document.body.innerHTML = '<div class="comments"><h4 id"comments-header"></h4> </div>';
 const commentsListSelector = document.querySelector('.comments');
