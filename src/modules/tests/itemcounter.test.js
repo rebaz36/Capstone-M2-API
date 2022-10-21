@@ -18,5 +18,23 @@ describe('items counter', () => {
       <div class="movie-container"> content </div>
     </div>`;
     expect(counter.getItems()).toEqual(7);
+    document.body.innerHTML = '';
+  });
+  test('item counter should update the header with the number of items', () => {
+    document.body.innerHTML = `
+    <div>
+      <button id="moviecount" >Movies</button>
+      <div class="movie-container"> content </div>
+      <div class="movie-container"> content </div>
+      <div class="movie-container"> content </div>
+      <div class="movie-container"> content </div>
+      <div class="movie-container"> content </div>
+      <div class="movie-container"> content </div>
+      <div class="movie-container"> content </div>
+    </div>`;
+    counter.setItems();
+    const movieCount = document.querySelector('#moviecount').innerHTML;
+    const expected = 'Movies (7)';
+    expect(movieCount).toEqual(expected);
   });
 });
