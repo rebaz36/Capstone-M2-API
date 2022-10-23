@@ -112,6 +112,7 @@ a:hover {
   height: 300px;
   width: 230px;
   border-radius: 20px;
+  box-shadow: 15px 10px 20px 1px rgba(0, 0, 0, 0.4);
 }
 
 .movie-info {
@@ -119,12 +120,19 @@ a:hover {
   flex-direction: column;
 }
 
+.movie-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .movie-title {
   align-self: center;
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 900;
   color: var(--liPink);
   flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .movie-buttons {

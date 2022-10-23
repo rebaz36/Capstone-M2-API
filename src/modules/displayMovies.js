@@ -14,8 +14,10 @@ export default async function displayMovies(number) {
       <img class="movie-image" src="${data[i].image}" alt="${data[i].title}" data-index-number=${i}>
         <div class="movie-info">
           <h3 class="movie-title">${data[i].title}</h3>
-          <p>Release Date: ${data[i].release_date}</p>
-          <p>Duration: ${hour}h ${minutes} min</p>
+          <div class="movie-description">
+            <p>Date: ${data[i].release_date}</p>
+            <p>Time: ${hour}h ${minutes}min</p>
+          </div>
         </div>
         <div class="movie-buttons">
           <button class="like-button" data-index-number="${i}">Like This?</button>
