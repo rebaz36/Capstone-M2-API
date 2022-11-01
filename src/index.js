@@ -9,9 +9,10 @@ import renderLikes from './modules/renderLikes.js';
 const moviesContainer = document.querySelector('.list-container');
 async function render() {
   document.onload = await displayHero(0);
-  document.onload = await displayMovies(8);
+  document.onload = await displayMovies(20);
   document.onload = await renderLikes();
   document.onload = await addLikes();
+
   moviesContainer.addEventListener('click', (e) => {
     const { target } = e;
     if (target.matches('.movie-image') || target.matches('.comment-button')) {

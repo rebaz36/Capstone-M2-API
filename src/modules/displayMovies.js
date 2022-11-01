@@ -6,7 +6,7 @@ export default async function displayMovies(number) {
   listContainer.innerHTML = '';
   const data = await ghibliapi.fetchallmovies();
 
-  for (let i = 0; i < number; i += 1) {
+  for (let i = 1; i < number; i += 1) {
     const hour = Math.floor((data[i].running_time / 60));
     const minutes = (data[i].running_time % 60);
 
